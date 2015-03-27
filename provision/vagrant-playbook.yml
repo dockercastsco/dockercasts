@@ -1,0 +1,12 @@
+- hosts: all
+  gather_facts: no
+  roles:
+    - docker
+    - upstart
+
+#- name: containers
+#  hosts: all
+#  gather_facts: no
+#  tasks:
+#    - name: postgres
+#      shell: 'docker-compose -f /app/compose/dev.yml up -d app'
