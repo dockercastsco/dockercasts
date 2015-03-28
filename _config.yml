@@ -3,6 +3,7 @@ title: Dockercasts
 email: tim@dockercasts.co
 description: >
   DockerCasts is producted by Tim Hogg.
+  <br />
   All screencasts center on one topic or technique that can be
   easily understood and applied to projects.
 baseurl: "" # the subpath of your site, e.g. /blog/
