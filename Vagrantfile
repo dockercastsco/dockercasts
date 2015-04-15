@@ -10,6 +10,7 @@ Vagrant.configure('2') do |config|
 
   # apps and services network stuff
   config.vm.network "forwarded_port", guest: 4000, host: 4000, auto_correct: true
+  config.vm.network "private_network", ip: '55.55.55.55'
 
   config.vm.provider :virtualbox do |vb|
     vb.gui = false
