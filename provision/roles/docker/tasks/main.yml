@@ -18,6 +18,14 @@
   sudo: true
   shell: 'curl -L https://github.com/docker/compose/releases/download/1.1.0/docker-compose-Linux-x86_64 > /usr/local/bin/docker-compose'
 
+- name: add dc alias
+  sudo: true
+  lineinfile:
+    dest: ~/.bash_aliases
+    line: "alias dc='docker-compose'"
+    state: present
+    create: yes
+
 - name: make compose executable
   sudo: yes
   shell: 'chmod +x /usr/local/bin/docker-compose'

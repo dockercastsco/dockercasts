@@ -1,0 +1,8 @@
+the dockercasts site is a good example of using docker in a development environment
+vagrant is used to set up a virtual machine with everything we need. Lets look at the Vagrantfile first
+next lets look at the ansible playbook that is used
+lets look at our compose yaml file next
+  the app image is built using the Dockerfile in the app directory
+next we will look at that Dockerfile
+now that the app image is built we can run the app using docker-compose -f compose/dev.yml up app
+that is how we use docker to setup the development environment for dockercasts
